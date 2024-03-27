@@ -1,12 +1,16 @@
-import './App.css'
+import React from 'react';
+import { AppUi } from './AppUI';
+import { TodoProvider } from './components/TodoContext';
 
 function App() {
-
   return (
-    <>
-      <div>hola mundo</div>
-    </>
-  )
+    <TodoProvider>
+      <AppUi />
+    </TodoProvider>
+  );
 }
 
-export default App
+
+
+export default App;
+
